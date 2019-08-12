@@ -34,10 +34,10 @@ export default class Example extends React.Component {
                             <NavItem>
                                 <NavLink href="/src/components/home.js">Home</NavLink>
                                 <NavLink href="/src/components/about.js">About</NavLink>
-                                <NavLink href="/components/">Life Style</NavLink>
-                                <NavLink href="/components/">Projects</NavLink>
-                                <NavLink href="/components/">Skills</NavLink>
-                                <NavLink href="/components/">Contact</NavLink>
+                                <NavLink href="/src/components/lifestyle.js">Life Style</NavLink>
+                                <NavLink href="/src/components/projects.js">Projects</NavLink>
+                                <NavLink href="/src/components/skills.js">Skills</NavLink>
+                                <NavLink href="/src/components/contact.js">Contact</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
