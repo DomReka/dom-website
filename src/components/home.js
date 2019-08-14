@@ -5,11 +5,15 @@ import './home';
 class Home extends Component {
     render(){
         return(
-            <container class="container">
-                <div class="myPix">
-                    <img src="../images/Me.jpg" alt="Me"/>
+            <div className="container">
+                <div className="myPix">
+                    <img className="pixOfMe" src={require('../images/Me.jpg')} alt="Me"/>
                 </div>
-            </container>
+                <div className="quote">
+
+                </div>
+                <h4> Welcome into my website !</h4>
+            </div>
         )
     }
 }

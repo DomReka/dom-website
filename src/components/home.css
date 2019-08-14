@@ -1,3 +1,26 @@
 .container {
-    background-color: lightgray;
+    margin: 0 auto;
+    width: 100%;
+    height: 30vw;
+    text-align: center;
+
+}
+
+.myPix {
+    display: inline-block;
+    width: 30vw;
+    height: 10vh;
+
+}
+
+.pixOfMe{
+    margin-top: 10%;
+    vertical-align: middle;
+    width: 90%;
+    border: 3px solid rgb(0, 119, 255);
+    border-radius: 150px;
+}
+
+h4 {
+    margin-top: 10%;
 }
