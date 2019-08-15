@@ -1,16 +1,18 @@
-.container-fluid {
+.homeWrapper {
     margin: 0 auto;
     width: 100%;
-    height: 11em;
+    height: 12em;
     text-align: center;
+    background-image: url('../images/thomas-tastet-code2.jpg');
+    background-size: cover;
     background-color: rgb(240, 240, 240);
     border-bottom: 1px solid rgba(0, 119, 255, 0.075);
 }
 
 .myPix {
     display: inline-block;
-    width: 30vw;
-    height: 10vh;
+    width: 100px;
+    height: 100px;
 
 }
 
@@ -22,16 +24,13 @@
     border-radius: 150px;
 }
 
-h4 {
-    margin-top: 10%;
-}
-
 .quote {
-    margin-top: 15%;
+    margin-top: 10%;
 }
 q {
     font-family: 'Shadows Into Light', cursive;
-    quotes: "“" "”" "‘" "’";
+    quotes:"‘" "’";
+    color: white;
 }
 q:before {
       content: open-quote;
@@ -41,11 +40,121 @@ q:after {
 }
 
 @media (min-width: 576px) { 
-    .container-fluid {
+    .homeWrapper {
         width: 100%;
-        height: 15em;
+        height: 13em;
         text-align: center;
         background-color: rgb(240, 240, 240);
         border-bottom: 1px solid rgba(0, 119, 255, 0.075);
+    }
+
+    .myPix {
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+    
+    }
+    
+    .pixOfMe{
+        margin-top: 10%;
+        vertical-align: middle;
+        width: 90%;
+        border: 3px solid rgb(0, 119, 255);
+        border-radius: 150px;
+    }
+
+    .quote {
+        margin-top: 5%;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 768px) { 
+    .homeWrapper {
+        width: 100%;
+        height: 14em;
+        text-align: center;
+        background-color: rgb(240, 240, 240);
+        border-bottom: 1px solid rgba(0, 119, 255, 0.075);
+    }
+
+    .myPix {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+    
+    }
+    
+    .pixOfMe{
+        margin-top: 10%;
+        vertical-align: middle;
+        width: 90%;
+        border: 3px solid rgb(0, 119, 255);
+        border-radius: 150px;
+    }
+
+    .quote {
+        margin-top: 3%;
+        font-size: 1.2em;
+        color: white;
+    }
+}
+
+@media (min-width: 992px) {     
+    .homeWrapper {
+        width: 100%;
+        height: 17em;
+        text-align: center;
+        background-color: rgb(240, 240, 240);
+        border-bottom: 1px solid rgba(0, 119, 255, 0.075);
+    }
+
+    .myPix {
+        display: inline-block;
+        width: 170px;
+        height: 170px;
+    
+    }
+    
+    .pixOfMe{
+        margin-top: 10%;
+        vertical-align: middle;
+        width: 90%;
+        border: 3px solid rgb(0, 119, 255);
+        border-radius: 150px;
+    }
+    .quote {
+        font-size: 1.4em;
+        color: white;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .homeWrapper {
+        width: 100%;
+        height: 19em;
+        text-align: center;
+        background-color: rgb(240, 240, 240);
+        border-bottom: 1px solid rgba(0, 119, 255, 0.075);
+    }
+
+    .myPix {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+    
+    }
+    
+    .pixOfMe{
+        margin-top: 10%;
+        vertical-align: middle;
+        width: 90%;
+        border: 3px solid rgb(0, 119, 255);
+        border-radius: 150px;
+    }
+
+    .quote {
+        font-size: 1.6em;
+        color: white;
     }
 }
