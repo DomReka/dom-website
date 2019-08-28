@@ -9,8 +9,11 @@ class About extends Component {
                     <h5>About me</h5>
                     <p>
                         Imagine a regular guy, who grew up with music, IT stuff, and learned everything
-                        he can until he can mixing it up to be who he is right now. That's me, I do all
-                        I can with passion at the maximum of my capacities.
+                        he can until he can mixing it up to be who he is right now.
+                    </p>
+                    <br />
+                    <p>
+                        That's me, I do all I can with passion at the maximum of my capacities.
                     </p>
                 </div>
             </div>
