@@ -1,50 +1,25 @@
 import React from 'react';
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    Nav,
-    NavItem,
-    NavLink,
-} from 'reactstrap';
+import { NavLink } from 'react-router-dom';
+import HomeIcon from '@material-ui/icons/Home';
+import Work from '@material-ui/icons/Work';
+import SchoolIcon from '@material-ui/icons/School';
+import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
+import ContactsIcon from '@material-ui/icons/Contacts';
 
-export default class Example extends React.Component {
-    constructor(props) {
-        super(props);
+export default class Header extends React.Component {
 
-        this.toggleNavbar = this
-            .toggleNavbar
-            .bind(this);
-        this.state = {
-            collapsed: true
-        };
-    }
-
-    toggleNavbar() {
-        this.setState({
-            collapsed: !this.state.collapsed
-        });
-    }
     render() {
-        return (
-                <Navbar color="faded" light>
-                    <NavbarToggler onClick={this.toggleNavbar} className="mr-2"/>
-                    <Collapse isOpen={!this.state.collapsed} navbar>
-                        <Nav navbar>
-                            <NavItem>
-                                <NavLink href="/src/components/home.js">Home</NavLink>
-                                <NavLink href="/src/components/about.js">About</NavLink>
-                                <NavLink href="/src/components/works.js">Works</NavLink>
-                                <NavLink href="/src/components/projects.js">Projects</NavLink>
-                                <NavLink href="/src/components/skills.js">Skills</NavLink>
-                                <NavLink href="/src/components/contact.js">Contact</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
-                </Navbar>
-        );
+
+        return(
+            <div className="container-fluid headerWrapper">
+                
+                <div className="navContainer"><NavLink className="navBar" to="/"><HomeIcon /> Acceuil</NavLink></div>
+                <div className="navContainer"><NavLink className="navBar" to="/skills"><Work /> Skills</NavLink></div>
+                <div className="navContainer"><NavLink className="navBar" to="/works"><SchoolIcon /> Etudes & Travaux</NavLink></div>
+                <div className="navContainer"><NavLink className="navBar" to="/projects"><DesktopWindowsIcon /> Projets</NavLink></div>
+                <div className="navContainer"><NavLink className="navBar" to="/contact"><ContactsIcon /> Contact</NavLink></div>
+                
+            </div>
+        )
     }
 }

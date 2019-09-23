@@ -1,0 +1,24 @@
+.headerWrapper {
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: #4c5c68;
+    background-image: url('../images/xv.png');
+    margin: 0 auto;
+}
+.navContainer {
+    margin: 1.7% 2.5% 0% 2.5%;
+}
+.navBar {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: #DCDCDD !important;
+    text-decoration: none !important;
+    list-style: none !important;
+}
